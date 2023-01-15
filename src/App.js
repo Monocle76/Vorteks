@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef, useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    var [todoList, setTodoList] = useState([])
+
+    const input = useRef()
+
+    return (
+        <div className="container">
+            <h1>Bacon Tracker</h1>
+            <input type="text" placeholder="Enter The Bacon" ref={input}/>
+            <button onClick={() => setTodoList([...todoList, input.current.value])} className="ml">Submit</button>
+            <ul>
+                {todoList.map(todo => <li key={todoList.indexOf(todo)}>{todo}</li>)}
+            </ul>
+        </div>
+    )
 }
 
 export default App;

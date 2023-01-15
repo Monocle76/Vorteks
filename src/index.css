@@ -1,13 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #0d262f;
+    color: rgb(204, 204, 204);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* zoom: 0.8; */
+    padding: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6, .bold-large {
+    font-weight: 800;
+}
+
+p, li, ul {
+    line-height: 1.7;
+}
+
+p {
+    color: #a8a8a8;
+}
+
+button {
+    background-color: #267dcc;
+    border: none;
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid #309bff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a[role="button"] {
+    background-color: #267ccc5a;
+    border: none;
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #309bff;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.07);
+    font-family: "Plus Jakarta Sans";
+    padding: 11.5px 17px;
+    color: #ccc;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    /* width: 10rem; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+input:focus {
+    outline: none;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+a[role="button"]:hover {
+    filter: brightness(1.2);
+}
+
+.secondary {
+    border: 1px solid #3aff30;
+    background-color: #75ba4d;
+}
+
+.linear-red {
+    background: linear-gradient(to bottom,#f88040,#d33a2c);
+    border-color: #ff6456;
+}
+
+.linear-green {
+    background: linear-gradient(to bottom,#41b14f,#137d54);
+    border-color: #56ff75;
+}
+
+.container {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.ml {
+    margin-left: 7px;
+}
+
+.mr {
+    margin-right: 7px;
+}
+
+.tag {
+    background-color: #ffffff12;
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: #3aff30;
+    font-size: 13px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.p {
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
